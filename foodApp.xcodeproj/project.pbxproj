@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		EC82F9CF2C28DB7100D57188 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82F9CE2C28DB7100D57188 /* AppDelegate.swift */; };
 		EC82F9D12C28DB7100D57188 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82F9D02C28DB7100D57188 /* SceneDelegate.swift */; };
-		EC82F9D32C28DB7100D57188 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82F9D22C28DB7100D57188 /* ViewController.swift */; };
 		EC82F9D62C28DB7100D57188 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC82F9D42C28DB7100D57188 /* Main.storyboard */; };
 		EC82F9D82C28DB7200D57188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC82F9D72C28DB7200D57188 /* Assets.xcassets */; };
 		EC82F9DB2C28DB7200D57188 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC82F9D92C28DB7200D57188 /* LaunchScreen.storyboard */; };
 		EC82F9E62C28DB7300D57188 /* foodAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82F9E52C28DB7300D57188 /* foodAppTests.swift */; };
 		EC82F9F12C28DB7300D57188 /* foodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82F9F02C28DB7300D57188 /* foodAppUITests.swift */; };
+		ECAA78AB2D023AA900570626 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA78AA2D023AA800570626 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		EC82F9CB2C28DB7100D57188 /* foodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC82F9CE2C28DB7100D57188 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC82F9D02C28DB7100D57188 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC82F9D22C28DB7100D57188 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC82F9D52C28DB7100D57188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC82F9D72C28DB7200D57188 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC82F9DA2C28DB7200D57188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		EC82F9EC2C28DB7300D57188 /* foodAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC82F9F02C28DB7300D57188 /* foodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodAppUITests.swift; sourceTree = "<group>"; };
 		EC82F9F22C28DB7300D57188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECAA78AA2D023AA800570626 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +99,11 @@
 		EC82F9CD2C28DB7100D57188 /* foodApp */ = {
 			isa = PBXGroup;
 			children = (
+				ECAA78A82D02396E00570626 /* CustomViews */,
 				ECAA78A72D00E62500570626 /* Views */,
 				ECAA78A62D00E5DA00570626 /* Models */,
 				EC82F9CE2C28DB7100D57188 /* AppDelegate.swift */,
 				EC82F9D02C28DB7100D57188 /* SceneDelegate.swift */,
-				EC82F9D22C28DB7100D57188 /* ViewController.swift */,
 				EC82F9D42C28DB7100D57188 /* Main.storyboard */,
 				EC82F9D72C28DB7200D57188 /* Assets.xcassets */,
 				EC82F9D92C28DB7200D57188 /* LaunchScreen.storyboard */,
@@ -140,8 +140,24 @@
 		ECAA78A72D00E62500570626 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ECAA78A92D02399F00570626 /* Onboarding */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ECAA78A82D02396E00570626 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		ECAA78A92D02399F00570626 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				ECAA78AA2D023AA800570626 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC82F9D32C28DB7100D57188 /* ViewController.swift in Sources */,
 				EC82F9CF2C28DB7100D57188 /* AppDelegate.swift in Sources */,
 				EC82F9D12C28DB7100D57188 /* SceneDelegate.swift in Sources */,
+				ECAA78AB2D023AA900570626 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
